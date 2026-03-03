@@ -1,132 +1,76 @@
 
-
 Job Listing Portal
 
-A web application built to make the hiring process smoother for both job seekers and employers. The goal behind this project was to create something clean, practical, and easy to use — a place where people can find opportunities without fighting the interface, and where employers can post openings without unnecessary steps.
-
----
-
-What the Project Does
-
-The portal brings together two sides of the job market:
-
-- Job seekers can create a profile, upload their resume, browse openings, and apply directly.
-- Employers can publish job listings, manage applications, and keep track of candidates from a simple dashboard.
-
-Everything is designed to feel familiar and intuitive, so users don’t need a manual to figure things out.
-
----
-
+Overview
+The Job Listing Portal is a full‑stack web application designed to streamline the interaction between job seekers and employers. It provides an intuitive interface for browsing job openings, creating job listings, managing applications, and maintaining user profiles. The platform supports secure authentication, resume uploads, advanced search filters, and dedicated dashboards for both user types.
 Core Features
 
-🔐Authentication & Security
-- Account creation and login for both user types.
-- Passwords stored securely.
-- Session‑based access to dashboards and actions.
+User Authentication
+- Secure registration and login  
+- Encrypted password storage  
+- Role‑based access for job seekers and employers
 
-👤Profile Management
-- Job seekers can add personal details, upload resumes, and update their info anytime.
-- Employers can maintain company details and contact information.
+- Profile Management
+- Job seeker profiles with personal details, resume upload, and contact information  
+- Employer profiles with company information and contact details  
 
-📄Job Listings
-- Employers can create, edit, and remove job posts.
-- Each listing includes:
-  - Title  
-  - Description  
-  - Responsibilities  
-  - Required qualifications  
-  - Location  
-  - Salary range  
+Profile Management
+- Job seeker profiles with personal details, resume upload, and contact information  
+- Employer profiles with company information and contact details  
 
-🔎Job Search & Filters
-- Search bar for quick lookups.
-- Filters for job type, location, and keywords.
-- Clean results layout for easy scanning.
+Job Listings
+- Create, edit, and delete job postings  
+- Structured job details including title, description, qualifications, responsibilities, location, and salary range  
 
-📨Applications
-- Job seekers can apply directly from a listing.
-- Employers can view applicants and manage candidate status.
+Job Search
+- Keyword‑based search  
+- Filters for job type, location, and other basic parameters
+- Job Application
+- Direct application submission by job seekers  
+- Employers can view, track, and manage received applications
+- Dashboards
+- Job seeker dashboard for tracking applied jobs and updating profiles  
+- Employer dashboard for managing job listings and reviewing applications  
 
-📊Dashboards
-- Job Seeker Dashboard: Track applied jobs, update profile.
-- Employer Dashboard: Manage job posts and review applications.
+Technology Stack
 
----
+Frontend
+- HTML5  
+- CSS3  
+- JavaScript  
+- (Optional additions if used: Bootstrap / Tailwind CSS)  
 
-How the System Is Structured
+Backend
+- Node.js  
+- Express.js  
 
-This section is intentionally written in a human, developer‑to‑developer tone — not a formal spec.
+Database
+- MongoDB with Mongoose ORM  
 
-- The app separates job seekers and employers logically, but keeps the UI consistent so both sides feel like they’re using the same product.
-- Job listings and applications are linked through simple relational structures, making it easy to track who applied where.
-- The dashboard pages act as the “control center” for each user type, keeping everything in one place.
+Authentication & Security
+- JWT (JSON Web Tokens) for session handling  
+- bcrypt.js for password hashing  
 
----
+File Handling
+- Multer for resume uploads  
 
-Tech Stack (Fill in your actual choices)
-
-You can adjust this to match your implementation:
-
-- Frontend: React / HTML / CSS / JavaScript  
-- Backend: Node.js / Express / Django / Laravel  
-- Database: MySQL / PostgreSQL / MongoDB  
-- Auth: JWT / Session-based  
-
----
-
-Getting the Project Running
-
-These steps are written the way a real developer would explain them — straightforward and without over‑engineering.
-
-1. Clone the repository
-`bash
-git clone <your-repo-url>
-cd job-listing-portal
+Architecture & Tools
+- RESTful API design  
+- MVC folder structure  
+- Real‑time status updates (via polling or WebSockets, depending on implementation)
+- Project Structure
 `
+/job-portal
+│── /public
+│── /views
+│── /routes
+│── /controllers
+│── /models
+│── /uploads
+│── app.js
+│── package.json
+│── README.md
 
-2. Install dependencies
-`bash
-npm install
-
-or
-pip install -r requirements.txt
-`
-
-3. Set up environment variables
-Create a .env file with your database credentials and auth keys.
-
-4. Start the server
-`bash
-npm start
-
-or
-python manage.py runserver
-`
-
-5. Open the app
-Visit:  
-`
-http://localhost:3000
-`
-(or whatever port your framework uses)
-
----
-
-Screenshots
-output :
-
-`
-/screenshots/homepage.png
-/screenshots/job-listings.png
-/screenshots/dashboard.png
-`
-
----
-
-Contact
-
-For support or collaboration: support@amdox.in
-
----
-
-//Group 6 : Interns project//
+`Contact
+For support or inquiries: support@amdox.in
+//Group 6 project 1 job search portal//
