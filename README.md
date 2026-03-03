@@ -1,4 +1,5 @@
-Readme. md:_ // according to technology implementation we update time to time with the code check output with the screenshot and after final updation we make it available with the hosted feature, till then keep patience//
+Readme. md:_
+// according to technology implementation we update time to time with the code check output with the screenshot and after final updation we make it available with the hosted feature, till then keep patience//
 
 Job Listing Portal
 
@@ -60,7 +61,8 @@ Architecture & Tools
 - MVC folder structure  
 - Real‑time status updates (via polling or WebSockets, depending on implementation)
 - Project Structure
-`
+
+
 /job-portal
 │── /public
 │── /views
@@ -72,6 +74,6 @@ Architecture & Tools
 │── package.json
 │── README.md
 
-`Contact
+Contact
 For support or inquiries: support@amdox.in
 //Group 6 project 1 job search portal//
