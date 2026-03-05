@@ -3,14 +3,14 @@ import express from "express";
 import { register, login, verifyToken, updateUser, fetchUser } from "../controller/JobSeeker.controller.js";
 import authenticateUser from "../middleware/auth.middleware.js";
 
-const JobSeeker = express.Router();
+const Users = express.Router();
 
 
-JobSeeker.post("/register", register);
-JobSeeker.post("/login", login);
-JobSeeker.get("/verifyToken", authenticateUser, verifyToken);
-JobSeeker.get("/fetchUser", authenticateUser, fetchUser);
-JobSeeker.put("/updateUser", authenticateUser, updateUser);
+Users.post("/register", register);
+Users.post("/login", login);
+Users.get("/verifyToken", authenticateUser, verifyToken);
+Users.get("/fetchUser", authenticateUser, fetchUser);
+Users.put("/updateUser", authenticateUser, updateUser);
 
 
-export default JobSeeker;
+export default Users;

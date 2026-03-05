@@ -5,6 +5,7 @@ import cors from "cors";
 import { fileURLToPath } from "url";
 
 import connectDB from "./connection.js";
+import Users from "./routes/auth.route.js";
 
 const PORT = process.env.PORT
 dotenv.config();
@@ -27,6 +28,10 @@ app.use(express.json());
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
+// APIs to call
+app.use("/api", Users)
 
 
 app.listen(PORT, () => {
